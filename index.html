@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classeviva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="StyleAll.css">
+    <link rel="icon" href="./src/icons/logo-browser.png">
+</head>
+
+
+<body class="body">
+
+<!--
+<?php  
+    # CONNESSIONE AL DATABASE
+
+    session_start();
+
+        
+
+    $servername = "db4free.net";
+    $dbusername = "classeviva2";
+    $dbpassword = "passwordbella";
+    $dbname = "classeviva2";
+
+
+    $conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
+
+
+    if (!$conn) {
+        die("Connessione fallita: " . mysqli_connect_error());
+    }
+
+
+    # DATI GENERICI
+
+    if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
+        $username = $_SESSION['username'];
+    
+        $sql_dati_generici = "SELECT media, FROM utenti WHERE username = '$username'";
+        $result_dati_generici = mysqli_query($conn, $sql_dati_generici);
+
+
+        if (mysqli_num_rows($result_dati_generici) > 0) {
+            while($row = mysqli_fetch_assoc($result_dati_generici)) {
+                $media = $row["media"];
+                
+            }
+        } else {
+            echo "Nessun risultato trovato (DATI GENERICI)";
+        }
+
+
+        # VOTI        
+                    
+        $sql_voti = "SELECT mtr, valore, valore_mostrato, colore FROM ". $_SESSION['username'] ."_voti ORDER BY id DESC LIMIT 5";
+        $result_voti = mysqli_query($conn, $sql_voti);
+
+        if (mysqli_num_rows($result_voti) > 0) {
+            while($row = mysqli_fetch_assoc($result_voti)) {
+                $mtr = $row["mtr"];
+                $valore = $row["valore"];
+                $valore_mostrato = $row["valore_mostrato"];
+                $colore = $row["colore"];
+                
+            }
+        } else {
+            echo "Nessun risultato trovato (DATI GENERICI)";
+        }
+        }
+    ?>
+
+-->
+        <div class="blocco-bianco"></div>
+        <div class="blocco-bianco"></div>
+        <nav>
+
+            <a href="" class="ScrittaCvv">
+                <img class="logo-classeviva" src="./src/icons/logo.png" alt="CLASSEVIVA">
+            </a>
+            <div class="LinksNav">
+                <button class="LinkNav Apps" onclick="Menu()" >
+                    <img src="src/icons/dots-menu.png" alt="9 pallini">    
+                </button>
+                <a href="./src/pages/account/index.html" class="LinkNav Account" id="MenuAppear">
+                    <img src="src/icons/account.png" alt="account">
+                </a>    
+            </div>
+        </nav>
+
+        <div style="display: none;" class="Menu" id="Menu" >
+            <div class="SectionMenu">
+                <a href="./src/pages/agenda/index.html">
+                    <img class="ImgMenu" src="./src/icons/menu/agenda.png" alt="agenda">
+                </a>
+                <a href="./src/pages/agenda/index.html">
+                    <p class="ScrittaMenu">Agenda</p>
+                </a>
+            </div>
+            <div class="SectionMenu">
+                <a href="./src/pages/valutazioni/index.html">
+                    <img class="ImgMenu" src="./src/icons/menu/valutazioni.png" alt="agenda">
+                </a>
+                <a href="./src/pages/valutazioni/index.html">
+                    <p class="ScrittaMenu">Valutazioni</p>
+                </a>
+            </div>
+            <div class="SectionMenu">
+                <a href="./src/pages/bacheca/index.html">
+                    <img class="ImgMenu" src="./src/icons/menu/bacheca.png" alt="agenda">
+                </a>
+                <a href="./src/pages/bacheca/index.html">
+                    <p class="ScrittaMenu">Bacheca</p>
+                </a>
+            </div>
+            <div class="SectionMenu">
+                <a href="./src/pages/didattica/index.html">
+                    <img class="ImgMenu" src="./src/icons/menu/didattica.png" alt="agenda">
+                </a>
+                <a href="./src/pages/didattica/index.html">
+                    <p class="ScrittaMenu">Didattica</p>
+                </a>
+            </div>
+            <div class="SectionMenu">
+                <a href="./src/pages/lezioni/index.html">
+                    <img class="ImgMenu" src="./src/icons/menu/lezioni.png" alt="agenda">
+                </a>
+                <a href="./src/pages/lezioni/index.html">
+                    <p class="ScrittaMenu">Lezioni</p>
+                </a>
+            </div>
+            <div class="SectionMenu">
+                <a href="./src/pages/permessi/index.html">
+                    <img class="ImgMenu" src="./src/icons/menu/permessi.png" alt="agenda">
+                </a>
+                <a href="./src/pages/permessi/index.html">
+                    <p class="ScrittaMenu">Permessi</p>
+                </a>
+            </div>
+            <div class="SectionMenu">
+                <a href="./src/pages/note/index.html">
+                    <img class="ImgMenu" src="./src/icons/menu/note.png" alt="agenda">
+                </a>
+                <a href="./src/pages/note/index.html">
+                    <p class="ScrittaMenu">Note</p>
+                </a>
+            </div>
+            <div class="SectionMenu">
+                <a href="./src/pages/scrutini/index.html">
+                    <img class="ImgMenu" src="./src/icons/menu/scrutini.png" alt="agenda">
+                </a>
+                <a href="./src/pages/scrutini/index.html">
+                    <p class="ScrittaMenu">Scrutini</p>
+                </a>
+            </div>
+            <div class="SectionMenu">
+                <a href="./src/pages/orario/index.html">
+                    <img class="ImgMenu" src="./src/icons/menu/orario.png" alt="agenda">
+                </a>
+                <a href="./src/pages/orario/index.html">
+                    <p class="ScrittaMenu">Orario</p>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="Section1">
+            <a href="./src/pages/agenda/index.html" class="SectionPiccolo Piccolo1 Section">
+                <h1 class="testi-sezione">Agenda</h1>
+                <div class="error-SectionPiccolo">
+                    <center>
+                        <img class="error-img" src="/src/icons/error.png" alt="">
+                        <p class="error-text">Oh no!<br>
+                            Sembra che questa sezione <br>
+                            non sia ancora disponibile</p>
+                    </center>
+                </div>
+                <div class="CalendarioGiorniSuccessivi Content-Section Content-Blur">
+                    <div class="DivGiorno Stesso">
+                        <p class="NumeroGiorno testi-sezione">16</p>
+                        <div class="DivMateriaCalendario Matematica">
+                            <h5 class="">Matematica</h5>
+                        </div>
+                        <div class="DivMateriaCalendario Inglese">
+                            <h5>Inglese</h5>
+                        </div>
+                    </div>
+                    <div class="DivLinea"></div>
+                    <div class="DivGiorno Successivo">
+                        <p class="NumeroGiorno testi-sezione">17</p>
+                        <div class="DivMateriaCalendario Italiano">
+                            <h5 class="">Italiano</h5>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./src/pages/valutazioni/index.html" class="SectionGrande Grande1 Section">
+                <h1 class="testi-sezione">Valutazioni</h1>
+                <div class="Voti Content-Section">
+                    <div class="MediaTotale">
+                        <div class="SfondoMediaTotale">
+                            <p class="NumeroMediaTotale">8,2</p>
+                            <p class="TextMediaTotale">Media Totale</p>    
+                        </div>
+                    </div>
+        
+                    <div class="UltimiVoti">
+                        <div class="Voto">
+                            <div class="SfondoVoto Positivo">
+                                <div class="SfondoBiancoVoto">
+                                    <p class="NumeroVoto PositivoNumero">9+</p>
+                                </div>
+                            </div>
+                            <p class="NomeMateriaVoto testi-sezione">MAT</p>
+                        </div>
+
+                        <div class="Voto">
+                            <div class="SfondoVoto Negativo">
+                                <div class="SfondoBiancoVoto">
+                                    <p class="NumeroVoto NegativoNumero">5-</p>
+                                </div>
+                            </div>
+                            <p class="NomeMateriaVoto testi-sezione">LIT</p>
+                        </div>
+
+                        <div class="Voto">
+                            <div class="SfondoVoto Positivo">
+                                <div class="SfondoBiancoVoto">
+                                    <p class="NumeroVoto PositivoNumero">8-</p>
+                                </div>
+                            </div>
+                            <p class="NomeMateriaVoto testi-sezione">ING</p>
+                        </div>
+
+                        <div class="Voto">
+                            <div class="SfondoVoto Positivo">
+                                <div class="SfondoBiancoVoto">
+                                    <p class="NumeroVoto PositivoNumero">7+</p>
+                                </div>
+                            </div>
+                            <p class="NomeMateriaVoto testi-sezione">TRG</p>
+                        </div>
+                    </div>    
+                </div>
+            </a>
+        </div>
+
+        <div class="Section2">
+            <a href="./src/pages/bacheca/index.html" class="SectionGrande Grande2 Section">
+                <h1 class="testi-sezione">Bacheca</h1>
+
+                <div class="error-SectionPiccolo">
+                    <center>
+                        <img class="error-img" src="/src/icons/error.png" alt="">
+                        <p class="error-text">Oh no!<br>
+                            Sembra che questa sezione <br>
+                            non sia ancora disponibile</p>
+                    </center>
+                </div>
+                <div class="MessaggiBacheca Content-Section Content-Blur">
+                    <div class="Messaggio">
+                        <p class="TextMessaggio testi-sezione">Link video conferenza dottor De Paolis</p>
+                        <img src="./src/icons/EmailClose.png" alt="EmailClose">
+                    </div>
+                    <hr class="HrMessaggio">
+                    <div class="Messaggio">
+                        <p class="TextMessaggio testi-sezione">Convocazione consigli di classe a composizione...</p>
+                        <img src="./src/icons/EmailOpen.png" alt="EmailOpen">
+                    </div>
+                    <hr class="HrMessaggio">
+                    <div class="Messaggio">
+                        <p class="TextMessaggio testi-sezione">Incontro/lezione dottor Marco De Paolis - 220_gen</p>
+                        <img src="./src/icons/EmailOpen.png" alt="EmailOpen">
+                    </div>
+                    <hr class="HrMessaggio">
+                    <div class="Messaggio">
+                        <p class="TextMessaggio testi-sezione">Sorveglianza durante gli intervalli</p>
+                        <img src="./src/icons/EmailOpen.png" alt="EmailOpen">
+                    </div>
+                </div>
+            </a>
+
+            <a href="./src/pages/didattica/index.html" class="SectionPiccolo Piccolo2 Section">
+                <h1 class="testi-sezione">Didattica</h1>
+
+                <div class="error-SectionPiccolo">
+                    <center>
+                        <img class="error-img" src="/src/icons/error.png" alt="">
+                        <p class="error-text">Oh no!<br>
+                            Sembra che questa sezione <br>
+                            non sia ancora disponibile</p>
+                    </center>
+                </div>
+                <div class="Content-Section Content-Blur">
+                    <div class="MaterialiProf">
+                        <p>GRAZIANO BISSOLI</p>
+                    </div>
+                    <div class="MaterialiProf">
+                        <p>PAOLA PAIOLA</p>
+                    </div>
+                    <div class="MaterialiProf">
+                        <p>LUCIA GUERRA</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="Section3">
+            <a href="./src/pages/lezioni/index.html" class="SectionPiccolo Piccolo3 Section">
+                <h1 class="testi-sezione">Lezioni</h1>
+
+                <div class="error-SectionPiccolo">
+                    <center>
+                        <img class="error-img" src="/src/icons/error.png" alt="">
+                        <p class="error-text">Oh no!<br>
+                            Sembra che questa sezione <br>
+                            non sia ancora disponibile</p>
+                    </center>
+                </div>
+                <div class="Content-Section Content-Blur">
+                    <div class="Lezione Italiano">
+                        <p class="PLezione TextItaliano">Lingua e letteratura Italiana</p>
+                    </div>
+                    <div class="Lezione Religione">
+                        <p class="PLezione TextReligione">Religione</p>
+                    </div>
+                    <div class="Lezione Diritto">
+                        <p class="PLezione TextDiritto">Diritto</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./src/pages/permessi/index.html" class="SectionGrande Grande3 Section">
+                <h1 class="testi-sezione">Permessi</h1>
+
+                <div class="error-SectionPiccolo">
+                    <center>
+                        <img class="error-img" src="/src/icons/error.png" alt="">
+                        <p class="error-text">Oh no!<br>
+                            Sembra che questa sezione <br>
+                            non sia ancora disponibile</p>
+                    </center>
+                </div>
+                <div class="CardsPermessi Content-Section Content-Blur">
+                    <div class="CardPermesso">
+                        <p class="PData testi-sezione">6 Marzo 2023</p>
+                        <p class="PDaGiusitificare testi-sezione">Da giustificare</p>
+                        <p class="PMotivo testi-sezione"></p>
+                    </div>
+                    <div class="CardPermesso">
+                        <p class="PData testi-sezione">6 Marzo 2023</p>
+                        <p class="PGiustificata testi-sezione">Giustificata</p>
+                        <p class="PMotivo testi-sezione">Motivi di famiglia</p>
+                    </div>    
+                </div>
+            </a>
+        </div>
+
+        <div class="Section4">
+            <a href="./src/pages/note/index.html" class="SectionGrande Grande4 Section">
+                <h1 class="testi-sezione">Note</h1>
+
+                <div class="error-SectionPiccolo">
+                    <center>
+                        <img class="error-img" src="/src/icons/error.png" alt="">
+                        <p class="error-text">Oh no!<br>
+                            Sembra che questa sezione <br>
+                            non sia ancora disponibile</p>
+                    </center>
+                </div>
+                <div class="Content-Section Content-Blur">
+                    <div class="Nota">
+                        <p class="PNomeProfNota testi-sezione">Gianduia Marco</p>
+                        <p class="PDataNota testi-sezione">27/01/23</p>
+                        <p class="PCommentoNota testi-sezione">Lo studente usa il telefono-cellulare in classe.</p>
+                    </div>
+                </div>
+                
+            </a>
+
+            <a href="./src/pages/scrutini/index.html" class="SectionPiccolo Piccolo4 Section">
+                <h1 class="testi-sezione">Scrutini</h1>
+                <div class="error-SectionPiccolo">
+                    <center>
+                        <img class="error-img" src="/src/icons/error.png" alt="">
+                        <p class="error-text">Oh no!<br>
+                            Sembra che questa sezione <br>
+                            non sia ancora disponibile</p>
+                    </center>
+                </div>
+                <div class="Content-Section Content-Blur">
+                    <div class="Periodo">
+                        <p>Primo Periodo</p>
+                    </div>
+                    <div class="Periodo">
+                        <p>Secondo Periodo</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <footer>
+            <p class="TextFooter">Classeviva Copyright @2023 | Produced by </p>
+            <a href="mailto:battaglia.manuel07@gmail.com">
+                <p class="LinkFooter"> Manuel Battaglia</p>
+            </a>
+            <p> & </p>
+            <a href="mailto:santinelliriccardo5@gmail.com">
+                <p class="LinkFooter"> Riccardo Santinelli</p>
+            </a>
+        </footer>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="script.js"></script>
+
+
+</body>
+</html>

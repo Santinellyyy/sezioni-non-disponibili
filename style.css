@@ -1,0 +1,532 @@
+/*---------------------------------------------- S E Z I O N I --------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.Section{
+    transition: box-shadow ease 0.3s;
+}
+
+.Section:hover{
+    box-shadow: 0px 0px 62px -6px rgba(0, 0, 0, 0.35);
+}
+
+.SectionGrande{
+    width: 60%;
+    padding: 2% 2.5%;
+    box-shadow: 0px 0px 60px -17px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.SectionPiccolo {
+    width: 32%;
+    padding: 2% 2.5%;
+    box-shadow: 0px 0px 60px -17px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.LinkNomeSezione{
+    font-size: 95%;
+    text-decoration: none;
+    color: #000000;
+}
+
+.testi-sezione{
+    text-decoration: none;
+    color: #000;
+    filter: blur(0px);
+}
+
+
+/*---------------------------------------------------- Sezione da finire -----------------------------------------------------------*/
+
+.Content-Blur {
+    filter: blur(22.5px);
+    z-index: 998; 
+    position: relative;
+    top: -170px;
+
+}
+
+.error-img {
+    padding-top: 20px;
+    width: 30px;
+}
+
+.error-text {
+    color: black;
+}
+
+.error-SectioPiccolo {
+    z-index: 1000;
+    position: relative;
+    
+}
+
+/*---------------------------------------------------- 1 -----------------------------------------------------------*/
+
+
+.Section1 {
+    /* border: 2px solid black; */
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 13%;
+    display: flex;
+    justify-content: space-between;
+    height: 28vh;
+
+}
+
+
+
+.Piccolo1:hover{
+    width: 32.35%;
+    height: 100.35%;
+    margin-left: -0.175%;
+    margin-top: -0.175%;
+    filter: blur(0px);
+}
+
+
+
+.Grande1:hover{
+    width: 60.35%;
+    height: 100.35%;
+    margin-right: -0.175%;
+    margin-top: -0.175%;
+}
+
+.Piccolo2:hover{
+    width: 32.35%;
+    height: 100.35%;
+    margin-left: -0.175%;
+    margin-top: -0.175%;
+}
+
+.Grande2:hover{
+    width: 60.35%;
+    height: 100.35%;
+    margin-right: -0.175%;
+    margin-top: -0.175%;
+}
+
+.Piccolo3:hover{
+    width: 32.35%;
+    height: 100.35%;
+    margin-left: -0.175%;
+    margin-top: -0.175%;
+}
+
+.Grande3:hover{
+    width: 60.35%;
+    height: 100.35%;
+    margin-right: -0.175%;
+    margin-top: -0.175%;
+}
+
+.Piccolo4:hover{
+    width: 32.35%;
+    height: 100.35%;
+    margin-left: -0.175%;
+    margin-top: -0.175%;
+}
+
+.Grande4:hover{
+    width: 60.35%;
+    height: 100.35%;
+    margin-right: -0.175%;
+    margin-top: -0.175%;
+}
+
+/*------------------ A G E N D A -------------------*/
+
+.CalendarioGiorniSuccessivi{
+    box-shadow: 0px 0px 57px -19px rgba(0, 0, 0, 0.35);
+    width: 100%;
+    border-radius: 15px;
+    padding: 0% 7%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+.DivGiorno {
+    width: 49.5%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.NumeroGiorno {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.DivMateriaCalendario {
+    padding: 1% 3%;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 5%;
+}
+
+.Matematica {
+    background-color: #4371A7;
+}
+
+.Inglese {
+    background-color: #388237;
+}
+
+.Italiano {
+    background-color: #6B59DA;
+}
+
+.DivLinea {
+    width: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #CDCDCD;
+}
+
+/*------------------ V A L U T A Z I O N I -------------------*/
+
+.Voti{
+    display: flex;
+    margin-top: 4%;
+    align-items: center;
+}
+
+.MediaTotale{
+    width: 130px;
+    height: 130px;
+    background-color: #8DB38C;
+    border-radius: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 18px rgba(141, 179, 140, 0.6));
+}
+
+.SfondoMediaTotale{
+    width: 105px;
+    height: 105px;
+    background-color: #fff;
+    border-radius: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.NumeroMediaTotale{
+    font-size: 150%;
+    color: #8DB38C;
+    font-weight: bolder;
+}
+
+.TextMediaTotale{
+    font-size: 75%;
+    color: #000;
+    font-weight: bold;
+}
+
+.UltimiVoti{
+    display: flex;
+    gap: 8%;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.Voto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SfondoVoto{
+    width: 75px;
+    height: 75px;
+    border-radius: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SfondoBiancoVoto{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.NumeroVoto{
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.NomeMateriaVoto{
+    font-size: 100%;
+    margin-top: 10%;
+}
+
+.Positivo{
+    background-color: #8DB38C;
+}
+
+.Negativo{
+    background-color: #C26156;
+}
+
+.PositivoNumero{
+    color: #8DB38C;
+}
+
+.NegativoNumero{
+    color: #C26156;
+}
+
+
+/*---------------------------------------------- 2 --------------------------------------------------*/
+
+
+.Section2{
+    /* border: 2px solid black; */
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 28vh;
+}
+
+/*------------------ B A C H E C A -------------------*/
+
+.MessaggiBacheca{
+    box-shadow: 0px 0px 57px -19px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    margin-top: 2.5%;
+    padding: 0.3% 0%;
+}
+
+.Messaggio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2% 2%;
+}
+
+.Messaggio img{
+    width: 4%;
+    margin: 0% 0.5%;
+}
+
+.TextMessaggio{
+    font-size: 90%;
+}
+
+.HrMessaggio{
+    width: 100%;
+    border: 1px solid #CDCDCD;
+}
+
+/*------------------ D I D A T T I C A -------------------*/
+
+.MaterialiProf{
+    margin-top: 5%;
+    padding: 2.7% 6%;
+    box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.MaterialiProf p{
+    text-decoration: none;
+    color: #000;
+    font-size: 105%;
+
+}
+
+.LinkMaterialiProf{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*---------------------------------------------------- 3 ----------------------------------------------------------*/
+
+
+.Section3{
+    /* border: 2px solid black; */
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 28vh;
+}
+
+/*------------------ L E Z I O N E -------------------*/
+
+.SfondoLezione{
+    background-color: white;
+}
+
+.Lezione{
+    background-color: #F4F4F4;
+    padding: 7% 0%;
+    height: 23px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    margin-top: 6%;
+    border-left-width: 7px;
+    border-left-style: solid;
+    
+}
+
+.HrLezione{
+    width: 2.5px;
+    height: 23px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.PLezione{
+    margin-left: 5%;
+}
+
+.Diritto{
+    border-left-color: #7A5D8E;
+}
+
+.Italiano{
+    border-left-color: #294883;
+}
+
+.Religione{
+    border-left-color: #3D6B26;
+}
+
+.TextDiritto{
+    color: #7A5D8E;
+}
+
+.TextItaliano{
+    color: #294883;
+}
+
+.TextReligione{
+    color: #3D6B26;
+}
+
+/*------------------ P E R M E S S I -------------------*/
+
+.CardsPermessi{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-top: 3%;
+}
+
+.CardPermesso{
+    display: flex;
+    flex-direction: column;
+    height: 16vh;
+    width: 35%;
+    padding: 3%;
+    box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+}
+
+.PData{
+    font-size: 110%;
+}
+
+.PDaGiusitificare{
+    font-size: 80%;
+    color: #CB4242;
+    margin-top: 5%;
+}
+
+.PGiustificata{
+    font-size: 80%;
+    color: #3D6B26;
+    margin-top: 5%;
+}
+
+.PMotivo{
+    margin-top: 15%;
+    opacity: 50%;
+}
+
+
+/*---------------------------------------------------- 4 ----------------------------------------------------------*/
+
+
+.Section4{
+    /* border: 2px solid black; */
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 28vh;
+}
+
+/*------------------ N O T E -------------------*/
+
+.Nota{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    height: 16vh;
+    width: 45%;
+    padding: 2.5%;
+    box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+}
+
+.PNomeProfNota{
+    font-size: 115%;
+}
+
+.PDataNota{
+    font-size: 90%;
+    margin-top: 2%;
+}
+
+.PCommentoNota{
+    font-size: 90%;
+    margin-top: 8%;
+}
+
+/*------------------ S C R U T I N I -------------------*/
+
+.Periodo{
+    margin-top: 5%;
+    padding: 2.7% 6%;
+    box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.Periodo p{
+    text-decoration: none;
+    color: #000;
+    font-size: 105%;
+
+}
+
+.LinkPeriodo{
+    text-decoration: none;
+    color: #000;
+}

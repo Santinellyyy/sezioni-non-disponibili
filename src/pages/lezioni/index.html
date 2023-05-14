@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezioni</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../StyleAll.css">
+    <link rel="icon" href="../../icons/logo-browser.png">
+    <link rel="stylesheet" href="../../../Materie.css">
+    <link rel="icon" href="../../icons/logo-browser.png">
+</head>
+<body class="body">
+
+    <!---------- N A V B A R ------------>
+    <div class="blocco-bianco"></div>
+    <nav>
+
+        <a href="../../../index.html" class="ScrittaCvv">
+            <img class="logo-classeviva" src="../../icons/logo.png" alt="CLASSEVIVA">
+        </a>
+        <div class="LinksNav">
+            <button class="LinkNav Apps" onclick="Menu()" >
+                <img src="../../icons/dots-menu.png" alt="9 pallini">    
+            </button>
+            <a href="../account/index.html" class="LinkNav Account">
+                <img src="../../icons/account.png" alt="account">
+            </a>  
+        </div>
+    </nav>
+
+    <!---------- M E N U ------------>
+    <div style="display: none;" class="Menu" id="Menu" >
+        <div class="SectionMenu">
+            <a href="../agenda/index.html">
+                <img class="ImgMenu" src="../../icons/menu/agenda.png" alt="agenda">
+            </a>
+            <a href="../agenda/index.html">
+                <p class="ScrittaMenu">Agenda</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../valutazioni/index.html">
+                <img class="ImgMenu" src="../../icons/menu/valutazioni.png" alt="agenda">
+            </a>
+            <a href="../valutazioni/index.html">
+                <p class="ScrittaMenu">Valutazioni</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../bacheca/index.html">
+                <img class="ImgMenu" src="../../icons/menu/bacheca.png" alt="agenda">
+            </a>
+            <a href="../bacheca/index.html">
+                <p class="ScrittaMenu">Bacheca</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../didattica/index.html">
+                <img class="ImgMenu" src="../../icons/menu/didattica.png" alt="agenda">
+            </a>
+            <a href="../didattica/index.html">
+                <p class="ScrittaMenu">Didattica</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../lezioni/index.html">
+                <img class="ImgMenu" src="../../icons/menu/lezioni.png" alt="agenda">
+            </a>
+            <a href="../lezioni/index.html">
+                <p class="ScrittaMenu">Lezioni</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../permessi/index.html">
+                <img class="ImgMenu" src="../../icons/menu/permessi.png" alt="agenda">
+            </a>
+            <a href="../permessi/index.html">
+                <p class="ScrittaMenu">Permessi</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../note/index.html">
+                <img class="ImgMenu" src="../../icons/menu/note.png" alt="agenda">
+            </a>
+            <a href="../note/index.html">
+                <p class="ScrittaMenu">Note</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../scrutini/index.html">
+                <img class="ImgMenu" src="../../icons/menu/scrutini.png" alt="agenda">
+            </a>
+            <a href="../scrutini/index.html">
+                <p class="ScrittaMenu">Scrutini</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../orario/index.html">
+                <img class="ImgMenu" src="../../icons/menu/orario.png" alt="agenda">
+            </a>
+            <a href="../orario/index.html">
+                <p class="ScrittaMenu">Orario</p>
+            </a>
+        </div>
+    </div>
+
+    <p class="nome-pagina">Lezioni</p>
+
+    <!---------- C O N T E N U T O ------------>
+    <div class="div-seleziona-materia">
+        <select id="selezione-materia" class="select-materia" onchange="MostraTabella()">
+            <option value="DIR">Diritto ed Economica</option>
+            <option value="ING">Inglese</option>
+            <option value="LIT">Italiano</option>
+            <option value="REL">Religione</option>
+        </select>
+    </div>
+
+
+
+    <table id="ING" class="table" style="display: none;">
+        <tr class="tr-legenda">
+            <th class="th-docente">Docente</th>
+            <th class="th-data">Data</th>
+            <th class="th-lezione">Lezione svolta</th>
+        </tr>
+        <tr>
+            <td>Giovanna Imberti</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Giovanna Imberti</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Giovanna Imberti</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Giovanna Imberti</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Giovanna Imberti</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Giovanna Imberti</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+    </table>
+
+
+    <table id="DIR" class="table" style="display: none;">
+        <tr class="tr-legenda">
+            <th class="th-docente">Docente</th>
+            <th class="th-data">Data</th>
+            <th class="th-lezione">Lezione svolta</th>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Mara Lovato</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+    </table>
+
+    <table id="LIT" class="table" style="display: none;">
+        <tr class="tr-legenda">
+            <th class="th-docente">Docente</th>
+            <th class="th-data">Data</th>
+            <th class="th-lezione">Lezione svolta</th>
+        </tr>
+        <tr>
+            <td>Paola Paiola</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Paola Paiola</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Paola Paiola</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Paola Paiola</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Paola Paiola</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Paola Paiola</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+    </table>
+
+
+    <table id="REL" class="table" style="display: none;">
+        <tr class="tr-legenda">
+            <th class="th-docente">Docente</th>
+            <th class="th-data">Data</th>
+            <th class="th-lezione">Lezione svolta</th>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+        <tr>
+            <td>Polato Stefano</td>
+            <td>03/03/2023</td>
+            <td>Discussione, approvazione e promulgazione delle leggi</td>
+        </tr>
+    </table>
+
+    
+
+
+    <!---------- F O O T E R ------------>
+    <footer>
+        <p class="TextFooter">Classeviva Copyright @2023 | Produced by </p>
+        <a href="mailto:battaglia.manuel07@gmail.com">
+            <p class="LinkFooter"> Manuel Battaglia</p>
+        </a>
+        <p> & </p>
+        <a href="mailto:santinelliriccardo5@gmail.com">
+            <p class="LinkFooter"> Riccardo Santinelli</p>
+        </a>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+    integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+    integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../../../script.js"></script>
+
+
+</body>
+</html>

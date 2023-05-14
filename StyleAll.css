@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 1vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #CC1020;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #CC1020;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+    width: 2vh;
+}
+
+
+/*---------------------------------------------- N A V --------------------------------------------------*/
+
+.blocco-bianco{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 84848484;
+}
+
+nav{
+    background-color: #CC1020;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 1.6% 3%;
+    border-radius: 20px;
+    width: 90%;
+    align-items: center;
+    z-index: 500;
+    top: 5%;
+    left: 5%;
+    z-index: 8484848484;
+}
+
+.logo-classeviva{
+    width: 40%;
+}
+
+.LinksNav {
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid black; */
+}
+
+.LinkNav {
+    display: flex;
+    float: right;
+    width: 6%;
+    background-color: #CC1020;
+    cursor: pointer;
+}
+
+.LinkNav img {
+    width: 100%;
+}
+
+.Account {
+    margin-left: 3.5%;
+}
+
+.nome-pagina{
+    text-align: center;
+    font-size: 300%;
+    font-weight: 700;
+    color: #4A4A4A;
+    margin-top: 12.5%;
+}
+
+/*---------------------------------------------- M E N U --------------------------------------------------*/
+
+.Menu{
+    z-index: 10000000;
+    width: 22%;
+    background-color: #CC1020;
+    border-radius: 30px;
+    position: fixed;
+    margin-top: -1.5%;
+    right: 5%;
+    padding: 2% 1%;
+    padding-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 60px -17px rgba(0, 0, 0, 0.35);
+}
+
+.SectionMenu{
+    margin-top: 7%;
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SectionMenu a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ImgMenu{
+    width: 46px;
+    height: 46px;
+}
+
+.ScrittaMenu{
+    margin-top: 7%;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/*---------------------------------------------- F O O T E R --------------------------------------------------*/
+
+
+footer{
+    background-color: #CC1020;
+    width: 100%;
+    padding: 0.7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    text-decoration: none;
+    color: #fff;
+    flex-direction: row;
+    gap: 0.3%;
+}
+
+.TextFooter{
+    color: #fff;
+}
+
+footer a{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.LinkFooter{
+    color: #fff;
+}
+
+
+
+
+
+/*---------------------------------------------- C O L O R I --------------------------------------------------*/
+
+
+

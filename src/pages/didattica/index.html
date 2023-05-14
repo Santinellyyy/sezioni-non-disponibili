@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Didattica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../StyleAll.css">
+    <link rel="icon" href="../../icons/logo-browser.png">
+    <link rel="stylesheet" href="../../../Materie.css">
+    <link rel="icon" href="../../icons/logo-browser.png">
+</head>
+<body class="body">
+
+    <!---------- N A V B A R ------------>
+    <div class="blocco-bianco"></div>
+    <div class="blocco-bianco"></div>
+    <nav>
+
+        <a href="../../../index.html" class="ScrittaCvv">
+            <img class="logo-classeviva" src="../../icons/logo.png" alt="CLASSEVIVA">
+        </a>
+        <div class="LinksNav">
+            <button class="LinkNav Apps" onclick="Menu()" >
+                <img src="../../icons/dots-menu.png" alt="9 pallini">    
+            </button>
+            <a href="../account/index.html" class="LinkNav Account">
+                <img src="../../icons/account.png" alt="account">
+            </a>    
+        </div>
+    </nav>
+
+
+    <!---------- M E N U ------------>
+    <div style="display: none;" class="Menu" id="Menu" >
+        <div class="SectionMenu">
+            <a href="../agenda/index.html">
+                <img class="ImgMenu" src="../../icons/menu/agenda.png" alt="agenda">
+            </a>
+            <a href="../agenda/index.html">
+                <p class="ScrittaMenu">Agenda</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../valutazioni/index.html">
+                <img class="ImgMenu" src="../../icons/menu/valutazioni.png" alt="agenda">
+            </a>
+            <a href="../valutazioni/index.html">
+                <p class="ScrittaMenu">Valutazioni</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../bacheca/index.html">
+                <img class="ImgMenu" src="../../icons/menu/bacheca.png" alt="agenda">
+            </a>
+            <a href="../bacheca/index.html">
+                <p class="ScrittaMenu">Bacheca</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../didattica/index.html">
+                <img class="ImgMenu" src="../../icons/menu/didattica.png" alt="agenda">
+            </a>
+            <a href="../didattica/index.html">
+                <p class="ScrittaMenu">Didattica</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../lezioni/index.html">
+                <img class="ImgMenu" src="../../icons/menu/lezioni.png" alt="agenda">
+            </a>
+            <a href="../lezioni/index.html">
+                <p class="ScrittaMenu">Lezioni</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../permessi/index.html">
+                <img class="ImgMenu" src="../../icons/menu/permessi.png" alt="agenda">
+            </a>
+            <a href="../permessi/index.html">
+                <p class="ScrittaMenu">Permessi</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../note/index.html">
+                <img class="ImgMenu" src="../../icons/menu/note.png" alt="agenda">
+            </a>
+            <a href="../note/index.html">
+                <p class="ScrittaMenu">Note</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../scrutini/index.html">
+                <img class="ImgMenu" src="../../icons/menu/scrutini.png" alt="agenda">
+            </a>
+            <a href="../scrutini/index.html">
+                <p class="ScrittaMenu">Scrutini</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../orario/index.html">
+                <img class="ImgMenu" src="../../icons/menu/orario.png" alt="agenda">
+            </a>
+            <a href="../orario/index.html">
+                <p class="ScrittaMenu">Orario</p>
+            </a>
+        </div>
+    </div>
+
+    <p class="nome-pagina">Didattica</p>
+
+    <!---------- C O N T E N U T O ------------>
+    <div class="container">
+        <div class="div-visualizzabile">
+            <button class="button-arrow" onclick="Folder(LIT)"> <!-- A C R O N I M O -- M A T E R I A -->
+                <img class="img-arrow normale" id="img-arrow" src="../../icons/didattica/arrow-down.png" alt="freccietta basso">
+            </button>
+            <p class="p-nome-prof" id="">
+                Paola Paiola <!-- N O M E -- P R O F -->
+            </p>
+        </div>
+        <div class="div-non-visualizzabile" id="LIT" style="display: none;"> <!-- A C R O N I M O -- M A T E R I A -->
+            <div class="div-cartella">
+                <button class="button-download-folder">
+                    <img class="img-folder" src="../../icons/didattica/download-folder.png" alt="folder">
+                </button>
+                <p class="p-nome-folder">Materiali</p> <!-- N O M E -- C A R T E L L A -->
+            </div>
+            <div class="div-cartella">
+                <button class="button-download-folder">
+                    <img class="img-folder" src="../../icons/didattica/download-folder.png" alt="folder">
+                </button>
+                <p class="p-nome-folder">Materiali</p>
+            </div>
+            <div class="div-cartella">
+                <button class="button-download-folder">
+                    <img class="img-folder" src="../../icons/didattica/download-folder.png" alt="folder">
+                </button>
+                <p class="p-nome-folder">Materiali</p>
+            </div>
+            <div class="div-cartella">
+                <button class="button-download-folder">
+                    <img class="img-folder" src="../../icons/didattica/download-folder.png" alt="folder">
+                </button>
+                <p class="p-nome-folder">Materiali</p>
+            </div>
+        </div>
+    </div>
+
+    <!---------- F O O T E R ------------>
+    <footer>
+        <p class="TextFooter">Classeviva Copyright @2023 | Produced by </p>
+        <a href="mailto:battaglia.manuel07@gmail.com">
+            <p class="LinkFooter"> Manuel Battaglia</p>
+        </a>
+        <p> & </p>
+        <a href="mailto:santinelliriccardo5@gmail.com">
+            <p class="LinkFooter"> Riccardo Santinelli</p>
+        </a>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+    integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+    integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../../../script.js"></script>
+
+
+</body>
+</html>

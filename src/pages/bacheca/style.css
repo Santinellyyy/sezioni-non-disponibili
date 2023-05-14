@@ -1,0 +1,181 @@
+.container{
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  flex-direction: column;
+  box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.comunicazione{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  padding: 1% 1.5%;
+  border-bottom: 2px solid #CDCDCD;
+}
+
+.container button:last-of-type{
+  border: none;
+}
+
+.titolo-comunicazione{
+  font-size: 130%;
+}
+
+.email{
+  width: 2.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.EventoMostrato{
+  width: 45%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100002;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.BarraRossaEvento{
+  background-color: #cc2010;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 3%;
+  height: 40px;
+  width: 100%;
+}
+
+.BarraRossaEvento p{
+  color: #fff;
+  font-weight: 600;
+  font-size: 110%;
+}
+
+.BarraRossaEvento button{
+  border: none;
+  background:none;
+  width: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.BarraRossaEvento button img{
+  width: 100%;
+}
+
+.dettagli-comunicazione{
+  padding: 2% 3%;
+  height: 400px;
+  width: 60%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+
+.NomeMateriaEvento{
+  font-size: 130%;
+  font-weight: 700;
+}
+
+.DataEvento{
+  font-size: 110%;
+  margin-top: 0.5%;
+}
+
+.NoteEvento{
+  margin-top: 2%;
+  font-size: 100%;
+}
+
+.content-comunazione{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+}
+
+.allegati{
+  padding: 2% 3%;
+  height: 400px;
+  width: 40%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-left: 2px solid #CDCDCD;
+}
+
+.p-allegati{
+  font-size: 140%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.p-nome-allegato{
+  font-size: 120%;
+}
+
+.img-download{
+  width: 15%;
+}
+
+.button-download-allegati{
+  background: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5%;
+}
+
+
+.blur{
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(207, 207, 207, 0.17);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ButtonBlur{
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

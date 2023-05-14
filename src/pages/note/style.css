@@ -1,0 +1,21 @@
+.container{
+  width: 60%;
+  margin-left: 20%;
+  box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+  padding: 1.5%;
+  margin-top: 3%;
+}
+
+.p-nome-prof{
+  font-size: 170%;
+}
+
+.p-data{
+  font-size: 100%;
+}
+
+.p-commento{
+  margin-top: 1%;
+  font-size: 110%;
+}
