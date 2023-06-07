@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valutazioni</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../StyleAll.css">
+    <link rel="icon" href="../../icons/logo-browser.png">
+</head>
+<body class="body">
+  
+    <div class="blocco-bianco"></div>
+    <div class="blocco-bianco"></div>
+    <nav>
+
+        <a href="../../../index.html" class="ScrittaCvv">
+            <img class="logo-classeviva" src="../../icons/logo.png" alt="CLASSEVIVA">
+        </a>
+        <div class="LinksNav">
+            <button class="LinkNav Apps" onclick="Menu()" >
+                <img src="../../icons/dots-menu.png" alt="9 pallini">    
+            </button>
+            <a href="../account/index.html" class="LinkNav Account">
+                <img src="../../icons/account.png" alt="account">
+            </a>    
+        </div>
+    </nav>
+
+
+    <div style="display: none;" class="Menu" id="Menu" >
+        <div class="SectionMenu">
+            <a href="../agenda/index.html">
+                <img class="ImgMenu" src="../../icons/menu/agenda.png" alt="agenda">
+            </a>
+            <a href="../agenda/index.html">
+                <p class="ScrittaMenu">Agenda</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../valutazioni/index.html">
+                <img class="ImgMenu" src="../../icons/menu/valutazioni.png" alt="agenda">
+            </a>
+            <a href="../valutazioni/index.html">
+                <p class="ScrittaMenu">Valutazioni</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../bacheca/index.html">
+                <img class="ImgMenu" src="../../icons/menu/bacheca.png" alt="agenda">
+            </a>
+            <a href="../bacheca/index.html">
+                <p class="ScrittaMenu">Bacheca</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../didattica/index.html">
+                <img class="ImgMenu" src="../../icons/menu/didattica.png" alt="agenda">
+            </a>
+            <a href="../didattica/index.html">
+                <p class="ScrittaMenu">Didattica</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../lezioni/index.html">
+                <img class="ImgMenu" src="../../icons/menu/lezioni.png" alt="agenda">
+            </a>
+            <a href="../lezioni/index.html">
+                <p class="ScrittaMenu">Lezioni</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../permessi/index.html">
+                <img class="ImgMenu" src="../../icons/menu/permessi.png" alt="agenda">
+            </a>
+            <a href="../permessi/index.html">
+                <p class="ScrittaMenu">Permessi</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../note/index.html">
+                <img class="ImgMenu" src="../../icons/menu/note.png" alt="agenda">
+            </a>
+            <a href="../note/index.html">
+                <p class="ScrittaMenu">Note</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../scrutini/index.html">
+                <img class="ImgMenu" src="../../icons/menu/scrutini.png" alt="agenda">
+            </a>
+            <a href="../scrutini/index.html">
+                <p class="ScrittaMenu">Scrutini</p>
+            </a>
+        </div>
+        <div class="SectionMenu">
+            <a href="../orario/index.html">
+                <img class="ImgMenu" src="../../icons/menu/orario.png" alt="agenda">
+            </a>
+            <a href="../orario/index.html">
+                <p class="ScrittaMenu">Orario</p>
+            </a>
+        </div>
+    </div>
+
+
+    <p class="nome-pagina">Valutazioni</p>
+    <center>
+        <form class="ButtonsPeriodi" id="form" method="POST" action="index.php">
+            <input type="hidden" id="nuovo_periodo" name="nuovo_periodo" value="">
+            
+            <button class="ButtonPeriodo Selected" id="PrimoPeriodo" onclick="OnPrimo()" type="submit">
+              <p>Primo Periodo</p>
+            </button>
+            
+            <button class="ButtonPeriodo NoSelected" id="SecondoPeriodo" onclick="OnSecondo()" type="submit">
+              <p>Secondo Periodo</p>
+            </button>
+            
+            <button class="ButtonPeriodo NoSelected" id="TuttiPeriodi" onclick="OnTerzo()" type="submit">
+              <p>Tutti</p>
+            </button>
+        </form>
+    </center>
+    
+    <div class="Materie">
+        <div class="ContainerVotiMateria"> 
+            <button onclick="MostraVoti(LIT)" class="Button"> <!--  al posto di LIT devi mettere la varibaile dellacronimo della materia  -->
+                <div class="ValutazioniMateria LIT" id="ValutazioniMateria"> <!--  al posto di LIT devi mettere la varibaile dellacronimo della materia  -->
+                    <div class="InfoValutazioniMateria">
+                        <p class="NomeMateria">Lingua e Letteratura Italiana</p>
+                        <p class="NomeProf">Paola Paiola</p>    
+                    </div>
+            
+                    <div class="Voto">
+                        <div class="SfondoVoto green">
+                            <div class="SfondoBiancoVoto">
+                                <p class="NumeroVoto greenNumero">7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </button>
+
+            <div id="LIT" class="MostraVoti" style="display:none"> <!-- al posto di LIT devi mettere la varibaile dellacronimo della materia  -->
+                <div class="VotoMostrato">
+                    <div class="CircleVotoMostrato green">
+                        <p class="NumeroVotoMostrato">8+</p>
+                    </div>
+                    <div class="InfoVoto">
+                        <p class="TipoVoto">Scritto/Grafico</p>
+                        <p class="DataVoto">05 Dicembre 2022</p>    
+                    </div>
+                </div> 
+
+                <div class="VotoMostrato">
+                    <div class="CircleVotoMostrato red">
+                        <p class="NumeroVotoMostrato">5</p>
+                    </div>
+                    <div class="InfoVoto">
+                        <p class="TipoVoto">Orale</p>
+                        <p class="DataVoto">17 Novembre 2022</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="TextFooter">Classeviva Copyright @2023 | Produced by </p>
+        <a href="mailto:battaglia.manuel07@gmail.com">
+            <p class="LinkFooter"> Manuel Battaglia</p>
+        </a>
+        <p> & </p>
+        <a href="mailto:santinelliriccardo5@gmail.com">
+            <p class="LinkFooter"> Riccardo Santinelli</p>
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+    integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+    integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="script.js"></script>
+    <script src="../../../script.js"></script>
+
+</body>
+</html>

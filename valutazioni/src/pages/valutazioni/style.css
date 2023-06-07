@@ -1,0 +1,280 @@
+
+
+.nome-pagina{
+    text-align: center;
+    font-size: 300%;
+    font-weight: 700;
+    color: #4A4A4A;
+    margin-top: 12%;
+}
+
+/*------------------ V A L U T A Z I O N I -------------------*/
+
+.Materie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5%;
+}
+
+.Button{
+    background:none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.ContainerVotiMateria{
+    width: 80%;
+    margin-top: 3%;
+}
+
+.ValutazioniMateria{
+    width: 100%;
+    box-shadow: 0px 0px 68px -11px rgba(0, 0, 0, 0.25);
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 1.5%;
+    border-left-width: 15px;
+    border-left-style: solid;
+}
+
+.InfoValutazioniMateria{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.NomeMateria{
+    font-size: 140%;
+    font-weight: 700;
+    color: #000;
+}
+
+.NomeProf{
+    font-weight: 400;
+    color: #000;
+}
+
+.Voto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SfondoVoto{
+    width: 55px;
+    height: 55px;
+    border-radius: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: drop-shadow(0px 0px 18px rgba(141, 179, 140, 0.6));
+}
+
+.SfondoBiancoVoto{
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    border-radius: 10000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.NumeroVoto{
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.NomeMateriaVoto{
+    font-size: 100%;
+    margin-top: 10%;
+}
+
+.Green{
+    background-color: #8DB38C;
+}
+
+.Red{
+    background-color: #C26156;
+}
+
+.Blue{
+    background-color: #6b96ae;
+}
+
+.Orange{
+    background-color: #DF9C5D;
+}
+
+.GreenNumero{
+    color: #8DB38C;
+}
+
+.RedNumero{
+    color: #C26156;
+}
+
+.BlueNumero{
+    color: #6b96ae;
+}
+
+.OrangeNumero{
+    color: #DF9C5D;
+}
+
+
+.LIT{
+    border-left-color: #c39e3d;
+}
+
+.STO{
+    border-left-color: #2e6781;
+}
+
+.STA{
+    border-left-color: #35693a;
+}
+
+.CHI{
+    border-left-color: #7f5c90;
+}
+
+.SMS{
+    border-left-color: #aa3b13;
+}
+
+.TRG{
+    border-left-color: #ce675e;
+}
+
+.MAT{
+    border-left-color: #cd7b26;
+}
+
+.DIR{
+    border-left-color: #dbb839;
+}
+
+.FIS{
+    border-left-color: #ac83c3;
+}
+
+.GEO{
+    border-left-color: #2e6781;
+}
+
+.ING{
+    border-left-color: #aa5700;
+}
+
+.EDC{
+    border-left-color: #aa3b13;
+}
+
+.REL{
+    border-left-color: #ce675e;
+}
+
+.SCT{
+    border-left-color: #aa5700;
+}
+
+
+
+
+.MostraVoti{
+    padding: 0% 5%;
+    padding-bottom: 200px;
+    margin-top: 3%;
+}
+
+.Show .MostraVoti {
+    display: block;
+}
+
+.Hide .MostraVoti {
+    display: none;
+}
+
+.VotoMostrato{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3%;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.CircleVotoMostrato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5000px;
+}
+
+.NumeroVotoMostrato{
+    color: #fff;
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.TipoVoto{
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.DataVoto{
+    font-size: 90%;
+}
+
+
+
+.ButtonsPeriodi {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.ButtonPeriodo p {
+    font-weight: 700;
+    font-size: 130%;
+}
+
+.ButtonPeriodo{
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 1% 3%;
+    border-radius: 1000px;
+    border: none;
+    box-shadow: 0px 0px 68px -11px rgba(0, 0, 0, 0.4);
+}
+
+.NoSelected{
+    background: #fff;
+    color: #CC1020;
+}
+
+.Selected{
+    background: #CC1020;
+    color: #fff;
+}
+

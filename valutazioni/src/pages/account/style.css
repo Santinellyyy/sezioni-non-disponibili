@@ -1,0 +1,134 @@
+.centra-div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container{
+  width: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 27px -10px rgba(0, 0, 0, 0.45);
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.parte-sopra{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.div-profile{
+  width: 30%;
+  height: 230px;
+  border-radius: 500000px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-profile{
+  width: 150%;
+}
+
+.div-info{
+  margin-left: 5%;
+  width: 70%;
+}
+
+.p-nome-cognome{
+  font-size: 210%;
+  font-weight: 700;
+}
+
+.p-numero-utente{
+  font-size: 110%;
+}
+
+.p-istituto{
+  margin-top: 2%;
+  font-size: 120%;
+}
+
+
+
+
+
+
+
+
+.parte-sotto{
+  width: 100%;
+}
+
+.div-email{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+.p-nome-sezione-account{
+  font-size: 150%;
+  font-weight: 700;
+}
+
+
+.div-password, .div-username{
+  margin-top: 4%;
+}
+
+.form-cambia-password, .form-cambia-username{
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  margin-top: 1%;
+}
+
+.input-field{
+  width: 25%;
+  border-radius: 500px;
+  padding: 1% 2%;
+  box-shadow: 0px 0px 27px -10px rgba(0, 0, 0, 0.45);
+}
+
+.input-field::placeholder{
+  font-weight: 600;
+  color: #000;
+  opacity: 0.5;
+}
+
+.input-submit{
+  border-radius: 500px;
+  padding: 0.5% 4%;
+  box-shadow: 0px 0px 27px -10px rgba(0, 0, 0, 0.45);
+  background-color: #CC1020;
+  color: #fff;
+  font-size: 105%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+
+.button-rimuovi-account{
+  margin-top: 6%;
+  padding: 1.5% 3%;
+  background-color: #3F3F3F;
+  border-radius: 500px;
+  box-shadow: 0px 0px 68px -11px rgba(0, 0, 0, 0.45);
+}
+
+.p-rimuovi-account{
+  color: #fff;
+  font-weight: 600;
+  font-size: 140%;
+}

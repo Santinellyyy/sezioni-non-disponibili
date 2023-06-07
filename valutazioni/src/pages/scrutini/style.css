@@ -1,0 +1,25 @@
+.container{
+  width: 60%;
+  margin-left: 20%;
+  box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+  padding: 1.5%;
+  margin-top: 3%;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.p-periodo{
+  font-size: 140%;
+  font-weight: 600;
+}
+
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
